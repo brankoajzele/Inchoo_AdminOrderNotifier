@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Inchoo
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Please do not edit or add to this file if you wish to upgrade
+ * Magento or this extension to newer versions in the future.
+ * Inchoo developers (Inchooer's) give their best to conform to
+ * "non-obtrusive, best Magento practices" style of coding.
+ * However, Inchoo does not guarantee functional accuracy of
+ * specific extension behavior. Additionally we take no responsibility
+ * for any possible issue(s) resulting from extension usage.
+ * We reserve the full right not to provide any kind of support for our free extensions.
+ * Thank you for your understanding.
+ *
+ * @category    Inchoo
+ * @package     Inchoo_AdminOrderNotifier
+ * @author      Branko Ajzele <ajzele@gmail.com>
+ * @copyright   Copyright (c) Inchoo (http://inchoo.net/)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config>
+    <sections>
+        <sales>
+            <groups>
+                <inchoo_adminOrderNotifier translate="label" module="inchoo_adminOrderNotifier">
+                    <label>Admin Order Notifier</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>900</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <active translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active>
+                        <notify_general_email translate="label">
+                            <label>Notify General Email</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </notify_general_email>
+                        <notify_sales_email translate="label">
+                            <label>Notify Sales Email</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </notify_sales_email>
+                        <notify_support_email translate="label">
+                            <label>Notify Support Email</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </notify_support_email>
+                        <notify_custom1_email translate="label">
+                            <label>Notify Custom1 Email</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </notify_custom1_email>
+                        <notify_custom2_email translate="label">
+                            <label>Notify Custom2 Email</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </notify_custom2_email>
+                        <notify_emails translate="label">
+                            <label>Notify Emails</label>
+                            <comment><![CDATA[Single or multiple emails in a following form "Firstname Lastname &lt;email&gt;", like "Branko Ajzele &lt;branko@inchoo.net&gt;", without quotation marks. In case of multiple entries, each entry goes on separate line.]]></comment>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </notify_emails>
+                        <email_template translate="label">
+                            <label>Email Template</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_email_template</source_model>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </email_template>
+                    </fields>
+                </inchoo_adminOrderNotifier>
+            </groups>
+        </sales>
+    </sections>
+</config>
